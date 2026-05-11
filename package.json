@@ -1,0 +1,16 @@
+{
+  "name": "heritage-properties",
+  "version": "1.0.0",
+  "description": "Full stack real estate app",
+  "scripts": {
+    "start": "node backend/server.js",
+    "backend": "npm run dev --prefix backend",
+    "frontend": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "dotenv": "^17.4.2",
+    "mongoose": "^9.6.2"
+  }
+}
